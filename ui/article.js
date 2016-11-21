@@ -1,6 +1,14 @@
 // Eg: coco98.imad.hasura-app.io/articles/article-one will result in article-one
 var currentArticleTitle = window.location.pathname.split('/')[2];
 
+function loadLoggedInUser (username) {
+    var loginArea = document.getElementById('login_area');
+    loginArea.innerHTML = `
+        <h3> Hi <i>${username}</i></h3>
+        <a href="/logout">Logout</a>
+    `;
+}
+
 function loadCommentForm () {
     var commentFormHtml = `
         <h5>Submit a comment</h5>
@@ -49,6 +57,7 @@ function loadLogin () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                 loadCommentForm(this.responseText);
+                loadLoggedInUser(this.responseText);
             }
         }
     };
