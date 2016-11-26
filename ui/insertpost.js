@@ -29,15 +29,15 @@ function loadLogin () {
 function loadpostarea()
 {
 	var PostHtml = 
-        `<h3>Registration</h3>
+        `
 		<table>
 		<tr>
 		<td>Title</td>
-        <td> <input type="text" id="title" placeholder="Title" required/> </td>
+        <td> <input type="text" id="title"  required/> </td>
 		</tr>
 		<tr>
 		<td>Heading</td>
-		<td> <input type="text" id="heading" placeholder="Heading" required /> </td>
+		<td> <input type="text" id="heading" required /> </td>
 		</tr>
 		<tr>
 		<td>Date</td>
@@ -45,7 +45,7 @@ function loadpostarea()
 		</tr>
 		<tr>
 		<td> Content</td>
-        <td> <textarea id="content"   required > </textarea>  
+        <td> <textarea id="content" rows="10" cols="50"   required > </textarea>  
 		</tr> 
         <tr>
 		<td> </td>

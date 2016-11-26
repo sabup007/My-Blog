@@ -1,22 +1,22 @@
 function loadRegForm () {
     var RegHtml = 
-        `<h3>Registration</h3>
+        `
 	  <table>
 		<tr>
 			<td>User Name </td>
-        		<td> <input type="text" id="username" placeholder="Username" required/> </td>
+        		<td> <input type="text" id="username"  required/> </td>
 		</tr>
 		<tr>
 			<td> Email </td>
-			<td> <input type="email" id="email" placeholder="Email" required /> </td>
+			<td> <input type="email" id="email"  required /> </td>
 		</tr>
 		<tr>
 			<td> Password</td>
-        	<td> <input type="password" id="password" name="password" placeholder="Password" required /> </td> 
+        	<td> <input type="password" id="password"  required /> </td> 
 		</tr>
 		<tr>
 			<td> Confirm Password </td>
-        		<td> <input type="password" id="cpassword" name="cpassword" placeholder=Confirm "Password" required  /> <span id="error">  </span> </td>
+        		<td> <input type="password" id="cpassword" required  /> <span id="error">  </span> </td>
 		</tr> 
         	<tr>
 			<td> </td>

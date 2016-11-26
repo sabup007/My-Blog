@@ -13,12 +13,31 @@ function loadLogin () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                 loadLoggedInUser(this.responseText);
+				loadAdminLogin();
             }			
         }
     };
     
     request.open('GET', '/check-login', true);
     request.send(null);
+}
+
+function loadAdminLogin () {
+    // Check if the admin is already logged in
+   var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+				var secret=document.getElementById("secret");
+				secret.innerHTML="<a href='/insertpost'>Insert Article</a>";
+            }
+            
+        }
+    };
+    
+    request.open('GET', '/check-adlogin', true);
+    request.send(null);
+
 }
 
 function loadArticles () {
