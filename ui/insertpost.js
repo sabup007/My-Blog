@@ -66,6 +66,7 @@ function loadpostarea()
               if (request.status === 200) {
                   alert('content posted successfully');
                   post.value = 'Posted!';
+                  	window.location="/article";
               } else {
                   alert('Could not Post the Content');
                   post.value = 'Post';
