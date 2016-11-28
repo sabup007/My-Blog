@@ -6,14 +6,16 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-<!DOCTYPE HTML>
-<html lang="en">
+function createTemplate (data) {
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
+    
+    var htmlTemplate = `
+    <!doctype html>
+<html>
 <head>
-<title>My Profile</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="keywords" content="My Profile Sabin Payyappat" />
-
 <link href="/ui/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/ui/cobox.css" rel="stylesheet" type="text/css">
 <link href="/ui/portfolio.css" rel="stylesheet" type="text/css" media="all">
@@ -91,7 +93,7 @@ $(document).ready(function(){
 	
 </body>
 </html>
-	
+    `;
 	
 	
 	
