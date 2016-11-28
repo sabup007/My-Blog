@@ -6,7 +6,7 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
 <title>My Profile</title>
