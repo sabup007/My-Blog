@@ -6,16 +6,6 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-function createTemplate (data) {
-    var title = data.title;
-    var date = data.date;
-    var heading = data.heading;
-    var content = data.content;
-    
-    var htmlTemplate = `
-    <!doctype html>
-<html>
-<head>
 <link href="/ui/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/ui/cobox.css" rel="stylesheet" type="text/css">
 <link href="/ui/portfolio.css" rel="stylesheet" type="text/css" media="all">
@@ -26,10 +16,6 @@ function createTemplate (data) {
 	
 <script src="/ui/modernizr.custom.js"></script>
 
-</head>
-
-<body>
-	<!-- js files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="/ui/bootstrap.min.js"></script>
 	<!-- js files for banner slider -->
@@ -91,12 +77,7 @@ $(document).ready(function(){
 	<!-- /js for sliding -->
 	<!-- /js files -->
 	
-</body>
-</html>
-    `;
-	
-	
-	
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
