@@ -1,10 +1,9 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
-var crypto = require('crypto');
-var bodyParser = require('body-parser');
-var session = require('express-session');
+
+var app = express();
+app.use(morgan('combined'));
 
 <link href="/ui/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/ui/cobox.css" rel="stylesheet" type="text/css">
