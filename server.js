@@ -5,6 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.get('/ui/style.css', function (req, res) {
 <link href="/ui/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/ui/cobox.css" rel="stylesheet" type="text/css">
 <link href="/ui/portfolio.css" rel="stylesheet" type="text/css" media="all">
