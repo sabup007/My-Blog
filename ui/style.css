@@ -166,7 +166,7 @@ body {
 }
 /*-- /link-effect --*/
 .banner {
-	background:url(banner.jpg) no-repeat;
+	background:url(/ui/banner.jpg) no-repeat;
 	background-position:center;
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -238,7 +238,7 @@ body {
 	display:inline-block;
 	width:40px;
 	height:40px;
-	background:url(social-iconss.png) no-repeat 0px 0px;
+	background:url(/ui/social-iconss.png) no-repeat 0px 0px;
 }
 .social-icons  span.facebook {
 	background-position:3px 0px;
@@ -313,7 +313,7 @@ img.img-responsive {
 	display:inline-block;
 	width:40px;
 	height:40px;
-	background:url(social-icons.png) no-repeat 0px 0px;
+	background:url(/ui/social-icons.png) no-repeat 0px 0px;
 }
 .mydetails .social-icons  span.facebook {
 	background-position:0px 0px;
