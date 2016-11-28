@@ -26,8 +26,75 @@ var session = require('express-session');
 
 </head>
 
+<body>
+	<!-- js files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/ui/bootstrap.min.js"></script>
+	<!-- js files for banner slider -->
+	<script src="/ui/responsiveslides.min.js"></script>
+	  <script>
+    $(window).load(function() {
+     // Slideshow for banner
+      $("#slider").responsiveSlides({
+        maxwidth: 1920,
+        speed: 1000
+      });
+    });
+  </script>
+	<!-- /js files for banner slider -->
+	<!-- js files for portfolio -->
+		<script src="/ui/classie.js"></script>
+		<script src="/ui/helper.js"></script>
+		<script src="/ui/grid3d.js"></script>
+		<script>
+			new grid3D( document.getElementById( 'grid3d' ) );
+		</script>
+	<!-- /js files for portfolio -->
+	<!-- js files for gallery -->
+<script type="text/javascript" src="/ui/cobox.js"></script>
+	<!-- /js files for gallery -->	
+	<!-- js for smooth scrolling -->
+	
+		<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  // Store hash
+  var hash = this.hash;
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+	<!-- /js for smooth scrolling -->
+	<!-- js for sliding -->
+	
+	<script>
+	$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+	<!-- /js for sliding -->
+	<!-- /js files -->
+	
+</body>
 </html>
-
+	
+	
+	
+	
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
