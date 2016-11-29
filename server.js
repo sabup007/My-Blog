@@ -16,7 +16,7 @@ function createTemplate (data) {
     <!doctype html>
 <html>
 <head>     
-<title>Personal Blog</title>
+<title>Sabin's Blog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
     <body>
