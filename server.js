@@ -18,73 +18,8 @@ function createTemplate (data) {
 <head>     
 <title>Personal Blog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/ui/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div class="main">
-		    <div class="header">
-		    <div class="header_resize">
-      <div class="logo">
-        <h1><a href="/" id="logo">Personal Blog <small>It's All I am.</small></a></h1>
-      </div>
-      <div class="menu_nav">
-        <ul>
-          <li ><a href="/"><span>Home Page</span></a></li>
-          <li class="active"><a href="/article"><span>My Articles</span></a></li>
-          <li><a href="/photos"><span>My Photos</span></a></li>
-          <li><a href="/contact"><span>Contact Me</span></a></li>
-		  <li> </li>
-		  <li id="login_area" style="padding-left:50px; "> <a href="/login" style="font-size:18px;">Login</a> </li>
-		</ul>
-		  
-        
-      </div>
-	  <div class="clr"></div>
-      <div class="clr"></div>
-    </div>
-  </div>
-    <div class="content">
-    <div class="content_resize">
-      <div class="mainbar">
-        <div class="article">
-            <h2>${heading}</h2>
-			<hr/>
-          <p class="infopost"> Date of posted: ${date.toDateString()}</p>
-          <div class="clr"></div>
-          <div class="post_content">
-            <div id="articles">
-              <div>
-                <p style="font-size:18px;text-align:justify; text-indent: 50px; line-height: 1.8;"> ${content} </p>
-              </div>
-              <hr/>
-              <h2>Comments</h2>
-              <div id="comment_form">
-              </div>
-              <div id="comments">
-                <center>Loading comments...</center>
-              </div>
-            </div>
-			
-          </div>
-          <div class="clr"></div>
-        </div>
-      </div>
-      
-      <div class="clr"></div>
-    </div>
-  </div>
-    	   
-    <div class="footer">
-     <div class="footer_resize">
-	   <p id="rl"> If you are a new user then  <a href="/reg">register now</a>.&nbsp Or &nbsp please  <a href="/login">login</a> to comment my articles.</p>
-       <p class="lf">&copy; Copyright Vishnu.</p>
-       <p class="rf">Design by Vishnu</p>
-       <div style="clear:both;"></div> 
-     </div>
-   </div>
-</div>
-        <script type="text/javascript" src="/ui/article.js">
-        </script>
 <link href="/ui/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/ui/cobox.css" rel="stylesheet" type="text/css">
 <link href="/ui/portfolio.css" rel="stylesheet" type="text/css" media="all">
